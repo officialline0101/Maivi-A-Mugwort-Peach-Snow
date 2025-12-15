@@ -15,7 +15,7 @@
             /* さらに右へ */
             top: 80%;
             /* 画面中央に固定 */
-            transform: translateY(-50%) translateX(20px);
+            transform: translateY(-50%) translateX(16px);
             /* 中央配置と右ずらし */
             background: #ab83e6;
             display: flex;
@@ -96,7 +96,7 @@
             background-color: #fdfdfd;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            width: 90%;
+            width: 96%;
             max-width: 500px;
             padding: 25px;
             box-sizing: border-box;
@@ -759,6 +759,7 @@
             </div>
             <div class="symptoms">
                 <button type="button" onclick="selectSymptom(this, 'treatment1')" data-price="15000">よもぎ蒸し(60分)</button>
+                <button type="button" onclick="selectSymptom(this, 'treatment1')" data-price="15000">漢方背中美人デトックス(60分)</button>
             </div>
             <div class="highlight-background">
                 <span class="highlight-text">オプション</span>
@@ -777,6 +778,7 @@
                 <button type="button" onclick="selectSymptom(this, 'treatment8')" data-price="15000">個性診断(30分)</button>
                 <button type="button" onclick="selectSymptom(this, 'treatment9')" data-price="15000">個性診断＋リーディング(初回60分)</button>
                 <button type="button" onclick="selectSymptom(this, 'treatment8')" data-price="15000">リーディング(2回以降60分)</button>
+                <button type="button" onclick="selectSymptom(this, 'treatment8')" data-price="15000">漢方背中美人デトックス(60分)</button>
             </div>
             <div class="highlight-background">
                 <span class="highlight-text">オプション</span>
@@ -887,6 +889,7 @@
         let selectedirradiationsTime = 0; // 訪問回数で選択された時間
 
         let menuTimes = {
+            '漢方背中美人デトックス(60分)': 90,
             'よもぎ蒸し(60分)': 90,
             'ハリ弾力アップコース(初回90分)': 120,
             'ハリ弾力アップコース(2回目以降60分)': 90,
