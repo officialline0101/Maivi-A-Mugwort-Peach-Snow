@@ -890,7 +890,7 @@
 
         let menuTimes = {
             '漢方背中美人デトックス(60分)': 90,
-            'よもぎ蒸し(60分)': 90,
+            'よもぎ蒸し(60分)': 0,
             'ハリ弾力アップコース(初回90分)': 120,
             'ハリ弾力アップコース(2回目以降60分)': 90,
             'ハリ弾力アップコース(美顔器あり初回100分)': 130,
@@ -1386,8 +1386,7 @@
                 '09:30', '10:00', '10:30', '11:00', '11:30',
                 '12:00', '12:30', '13:00', '13:30',
                 '14:00', '14:30', '15:00', '15:30',
-                '16:00', '16:30', '17:00', '17:30',
-                '18:00', '18:30'
+                '16:00', '16:30', '17:00', '17:30'
             ];
 
             if (table.rows.length === 0) {
@@ -1464,11 +1463,11 @@
                     }
 
                     // 18時以降に終了する予約を不可にする (17:30は可)
-                    if (slotEnd.getHours() === 17 && slotEnd.getMinutes() > 0) {
+                    if (slotEnd.getHours() === 19 && slotEnd.getMinutes() > 0) {
                         cell.textContent = '✕';
                         cell.classList.add('unavailable');
                         continue;
-                    } else if (slotEnd.getHours() > 17) {
+                    } else if (slotEnd.getHours() > 19) {
                         cell.textContent = '✕';
                         cell.classList.add('unavailable');
                         continue;
